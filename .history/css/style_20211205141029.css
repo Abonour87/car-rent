@@ -452,6 +452,9 @@ img {
     }
     .header-nav .togg-sm i {
         top: 22px;
+        right: -8px;
+        font-size: 22px;
+        cursor: pointer;
     }
     .banner-item .carousel-item .book {
         width: 100%!important;

@@ -451,7 +451,13 @@ img {
         width: 20%!important;
     }
     .header-nav .togg-sm i {
+        display: block;
+        float: right;
+        position: relative;
         top: 22px;
+        right: -8px;
+        font-size: 22px;
+        cursor: pointer;
     }
     .banner-item .carousel-item .book {
         width: 100%!important;
