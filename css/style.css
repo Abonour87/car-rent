@@ -1,0 +1,753 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+/* @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700'); */
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i'); */
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(slick.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+     box-sizing: border-box !important;
+     transition: ease all 0.5s;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+     font-family:sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+     overflow-x: hidden;
+     overflow-y: auto;
+}
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+}
+
+
+
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     font-weight: 300;
+     font-size: 15px;
+     line-height:1.8;
+}
+
+a {
+     color: #222222;
+     text-decoration: none;
+     outline: none !important;
+}
+
+a,
+.btn {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+img {
+     max-width: 100%;
+     height: auto;
+}
+
+ :focus {
+     outline: 0;
+}
+.header-nav{
+    background-color: #1a1a1a;
+    color: #fff;
+    position: fixed;
+    z-index: 99999;
+    margin: auto;
+    width: 100%;
+}
+.header-nav .logo img{
+    height: 43px;
+    margin: 8px 0 0 0;
+}
+.header-nav .header-lins ul{
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav .header-lins{
+    float: right;
+}
+.header-nav .header-lins ul>li{
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 60px;
+}
+.header-nav .header-lins ul>li a{
+    color: #fff;
+    line-height: 60px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.header-nav .header-lins  ul>li a.active{
+    color: #f8ca12;
+}
+/* -----------------------start banner-item-------------------------------- */
+.banner-item{
+    padding: 30px 0;
+    background-color: #1a1a1a;
+}
+.banner-item .carousel-item .book{
+    background-color: #f8ca11;
+    width: 70%;
+    position: relative;
+    left: 75px;
+    top: 30px;
+    height: 149px;
+    padding: 10px;
+    text-align: center;
+    height: 132px;
+    margin: 0 0 0 65px;
+}
+.banner-item .carousel-item .book>h1{
+ color: #fff;
+}
+.banner-item .carousel-item .img-icon{
+   margin:40px 0 0 142px;
+}
+.banner-item .carousel-item .img-icon img{
+    width: 400px;
+    display: block;
+}
+.banner-item .carousel-item .contact-bg h1{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.banner-item .carousel-item .contact-bg .contact-form{
+    background: #fff;
+    height: 256px;
+    padding: 15px;
+}
+.banner-item .carousel-item .contact-bg .contact-form h2{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.banner-item .carousel-item .contact-bg .contact-form form input{
+    display: block;
+    width: 100%;
+    background: #eaeaea;
+    margin-bottom: 15px;
+    border: none;
+    text-indent: 5px;
+    height: 31px;
+    border-radius: 5px;
+}
+.banner-item .carousel-item .contact-bg .contact-form form input[type="submit"]{
+    background: #1a1a1a;
+    color: #fff;
+    width: 106px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    position: relative;
+    left: 82.3%;
+    height: 33px;
+    cursor: pointer;
+}
+.banner-item .carousel-item .contact-bg .contact-form form input[type="submit"]:hover{
+    background-color: #f8ca12;
+    color: #333;
+}
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev{
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-color: #f8ca12;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    padding: 0;
+    font-weight: 100;
+    font-size: 33px;
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+}
+.carousel .carousel-control-prev{
+    top: 45%;
+}
+.carousel .carousel-control-next{
+    top:23%;
+}
+/* -------------------------------------------start section taxi------------------------------------------------ */
+.taxi{
+    background-color: #1a1a1a;
+    margin-top: 78px;
+    padding: 40px 0;
+    position: relative;
+}
+.taxi h2{
+    color: #fff;
+    font-size: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 28px 0;
+}
+.taxi .taxi-one{
+  background-color: #fff;
+  position: relative;
+  padding: 10px;
+}
+.taxi .taxi-one span{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #f8ca11;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    top: -26px;
+    position: absolute;
+    left: 145px;
+    color: #fff;
+}
+.taxi .taxi-one h3{
+    text-align: center;
+    margin: 79px 0 0 0;
+}
+.taxi .taxi-one p{
+    text-align: center;
+    color: #1d1d1d;
+}
+/* -------------------------------------------start section ride------------------------------------------------ */
+.ride{
+    position: relative;
+    padding: 40px 0;
+}
+.ride .ride-h{
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    font-size: 37px;
+}
+.ride .ride-h>span{
+    color: #f4db31
+}
+
+.ride .main{
+    margin: 50px 0;
+}
+.ride .first{
+    margin-bottom: 25px;
+}
+.ride .first .ride-p h3{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.ride .first .ride-p a{
+    display: block;
+    background: #f8ca11;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    margin: 40px 0 0;
+    transition: 0.8s;
+}
+.ride .first .ride-p a:hover{
+    background: #1a1a1a;
+}
+.ride .second .ride-p{
+  text-align: right;
+}
+.ride .second .ride-p h3{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.ride .second .ride-p a{
+    display: block;
+    background: #f8ca11;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    margin: 40px 0 0;
+    transition: 0.8s;
+    margin-left:84%;
+}
+.ride .second .ride-p a:hover{
+    background: #1a1a1a;
+}
+.location{
+    position: relative;
+    padding: 40px 0;
+    background: url(../images/img-6.png);
+    background-repeat: no-repeat;
+    background-size: 93% 100%;
+}
+.location .location-img{
+    position: relative;
+    left: 75%;
+    margin: -84px 0 0 0;
+   
+}
+.location .location-img img{
+    height: 300px;
+}
+.location .location-p{
+    position: relative;
+    left: 40%;
+    color: #1a1a1a;
+    font-size: 26px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 49px 0 0 0;
+}
+.location .location-p span{
+    color: #c1354f;
+}
+/* --------------------------------start contact----------------------------------------------- */
+.contact{
+    background: #292828;
+    padding: 40px 0;
+    position: relative;
+    margin-top: 45px;
+}
+.contact h2{
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+.contact p{
+    text-align: justify;
+    color: #fff;
+    word-spacing: -1px;
+}
+.contact ul> li>a{
+    color: #fff;
+    display: inline-block;
+    padding: 0 0 0 5px;
+}
+.contact ul> li>i{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+}
+.contact input[type="email"]{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    text-indent: 5px;
+    height: 40px;
+    border-radius: 4px;
+}
+.contact input[type="submit"]{
+    width: 109px;
+    height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f8ca11;
+    color: #fff;
+}
+/* --------------------------------start footer----------------------------- */
+.footer{
+    text-align: center;
+    padding: 20px 0;
+    color: #333; 
+}
+.footer>a{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #f8ca11; 
+}
+
+/* -----------------------------------------------------------------start media query------------------------------------------ */
+/* ---------------------------small and xsmall screen-------------------------------------------- */
+@media (max-width:576px){
+    .header-nav .logo{
+        width: 20%!important;
+    }
+    .banner-item .carousel-item .book {
+        width: 100%!important;
+        left: 0%!important;
+        top: 48px!important;
+        margin: 0 auto;
+        height: 100px;
+    }
+    .banner-item .carousel-item .book h1{
+       font-size:20px;
+    }
+    .banner-item .carousel-item .book h2{
+        font-size:20px;
+     }
+     .banner-item .carousel-item .img-icon img {
+        width: 100%;
+    }
+    .banner-item .carousel-item .contact-bg h1 {
+        font-size: 16px;
+    }
+    .banner-item .carousel-item .contact-bg .contact-form {
+        padding: 45px 15px!important;
+    }
+    .banner-item .carousel-item .contact-bg .contact-form form input {
+        height: 40px!important;
+    }
+    .banner-item .carousel-item .contact-bg .contact-form form input[type="submit"] {
+        height: 40px!important;
+    }
+    .banner-item .carousel-item .contact-bg .contact-form form input[type="submit"] {
+        left: 0!important;
+    }
+    .banner-item .carousel-item .contact-bg .contact-form h2 {
+        font-size: 14px!important;
+    }
+    .taxi h2 {
+        font-size: 26px;
+    }
+    .taxi .taxi-one h3 {
+        font-size: 17px;
+    }
+    .taxi .taxi-one span {
+        left: 40% !important;
+    }
+    .taxi .taxi-one {
+        padding: 25px 0;
+    }
+    .taxi .taxi-one img {
+        width: 95%;
+    }
+    .ride .ride-h {
+        width: auto!important;
+        font-size: 10px;
+    }
+    .ride .first .ride-p h3 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .ride .first p {
+        font-size: 13px;
+    }
+    .ride .second .ride-p h3 {
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: left!important;
+    }
+    .ride .second p {
+        font-size: 13px;
+    }
+    .ride .second .ride-p a {
+        float: laf;
+    }
+    .ride .second .ride-p a {
+        margin: 40px 0 23px;
+    }
+    .ride .second .ride-p a {
+        float: left!important;
+    }
+    .location .location-p {
+        font-size: 12px;
+    }
+    .location .location-img img {
+        height: 135px!important;
+    }
+    .contact h2{
+        font-size: 20px!important;
+    }
+    .contact p {
+       font-size: 12px!important;
+    }
+    .contact h2 {
+        margin: 5px 0;
+    }
+    .contact ul > li > a {
+        font-size: 12px!important;
+    }
+    .footer {
+        font-size: 12px!important;
+    }
+    .footer>a {
+        font-size: 12px!important;
+    }
+}
+@media (max-width:767px){
+    .header-nav .header-lins {
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: -100%;
+        background: rgba(0,0,0,0.9);
+        overflow-x: visible;
+    }
+    .header-nav .header-lins ul {
+        width: 100%;
+    }
+    .header-nav .header-lins i {
+        position: absolute;
+        right: 14px;
+        top: 12px;
+        font-size: 19px;
+        cursor: pointer;
+    }
+    .header-nav .header-lins ul>li {
+        display: block!important;
+        width: 100px!important;
+        height: 60px!important;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .header-nav .togg-sm i {
+        display: block;
+        float: right;
+        position: relative;
+        top: -20px;
+        right: -8px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .banner-item .carousel-item .book {
+        width: 100%;
+        left: -84px;
+        top: 48px;
+        padding: 21px;
+    }
+    .carousel .carousel-control-next {
+        display: none;
+    }
+    .carousel .carousel-control-prev {
+        display: none;
+    }
+    .banner-item .carousel-item .img-icon {
+        margin: 66px 0 0 21px;
+    }
+    .banner-item .carousel-item .img-icon img {
+        width: 541px;
+    }
+    .banner-item .carousel-item .contact-bg h1 {
+        margin-bottom: 20px;
+    }
+    .banner-item .carousel-item .contact-bg .contact-form {
+        padding: 45px;
+        height: 334px;
+    }
+    .banner-item .carousel-item .contact-bg .contact-form h2 {
+        margin-bottom: 15px;
+    }
+    .banner-item .carousel-item .contact-bg .contact-form form input {
+        height: 46px;
+    }
+    .banner-item .carousel-item .contact-bg .contact-form form input[type="submit"] {
+        height: 46px;
+    }
+    /* ----------------------------start about--------------------------------- */
+    .taxi .taxi-one span {
+        left: 51px;
+    }
+    .taxi .taxi-one h3 {
+        margin: 46px 0 0 0;
+    }
+    /* --------------------start taxi---------------------------------------- */
+    .ride .ride-h {
+        border-bottom: 1px solid #000;
+        width: 418px;
+        margin: 5px auto;
+    }
+    .ride .second .ride-p p{
+        text-align: justify;
+    }
+    .ride .second .ride-p a {
+        float: right;
+    }
+    /* ------------------------------contact--------------------------------- */
+    .contact h2 {
+        text-align: left;
+    }
+    .contact p {
+        text-align: left;
+    }
+    .contact {
+        margin-top: 0px;
+    }
+    /* ------------------------------location-------------------------------- */
+    .location {
+        background-size: 100% 100%;
+    }
+
+}
+
+/* ----------------------------------------------meduim size------------------------------------- */
+@media (min-width:768px){
+    /* ----------------------------------------header-nav-------------------------------------- */
+    .header-nav .togg-sm{
+        display: none;
+    }
+    .header-nav .header-lins {
+        width: 100%!important;
+    }
+    .header-nav .header-lins i{
+        display: none;
+    }
+    .header-nav .header-lins ul>li {
+        width:16%;
+        text-align: center;
+    }
+    .header-nav .header-lins ul>li a{
+        font-size: 20px;
+    }
+    /* --------------------------------------carousel-------------------------------------------- */
+    .carousel .carousel-control-next {
+        display: none;
+    }
+    .carousel .carousel-control-prev {
+        display: none;
+    }
+    .carousel-item .book {
+        width: 100%!important;
+        left: 0!important;
+        margin: 0!important;
+    }
+    /* -------------------------------------banner----------------------------------------------- */
+    .banner-item .carousel-item .img-icon {
+        margin: 55px 0 0 0px;
+    }
+    .banner-item .carousel-item .contact-bg .contact-form form input {
+        height: 47px;
+    }
+    .banner-item .carousel-item .contact-bg .contact-form {
+        height: 315px;
+    }
+    .banner-item .carousel-item .contact-bg .contact-form form input[type="submit"] {
+        height: 42px;
+        left: 70.3%;
+    }
+    .banner-item .contact-bg{
+       margin-top: 55px !important;
+    }
+    .banner-item .carousel-item .contact-bg h1 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .banner-item .carousel-item .book {
+      margin-top: 30px !important;
+    }
+    /* -----------------------------------ride------------------------------------------------ */
+    .ride .second .ride-p a {
+        float: right;
+        margin-left: 0;
+    }
+    /* ----------------------------------location------------------------------------------- */
+    .location {
+        background-size: 100% 100%;
+    }
+        /* ------------------------------contact--------------------------------- */
+        .contact h2 {
+            text-align: left;
+        }
+        .contact p {
+            text-align: left;
+        }
+        .contact {
+            margin-top: 0px;
+        }
+}
+/* ------------------------------large-size----------------------------------------- */
+@media (min-width:992px){
+    .carousel .carousel-control-next {
+        display: block;
+    }
+    .carousel .carousel-control-prev {
+        display: block;
+    }   
+    .carousel-item .book {
+        width: 76%!important; 
+        left: 17%!important;
+    } 
+    .banner-item .carousel-item .img-icon {
+        margin: 55px 0 0 94px;
+    }
+}
+
