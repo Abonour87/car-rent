@@ -448,7 +448,7 @@ img {
 /* ---------------------------small and xsmall screen-------------------------------------------- */
 @media (max-width:576px){
     .body{
-        overflow: hidden;
+        overflow: ;
     }
     .header-nav {
         max-width: 480px !important;
