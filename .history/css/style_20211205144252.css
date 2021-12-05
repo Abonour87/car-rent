@@ -448,7 +448,12 @@ img {
 /* ---------------------------small and xsmall screen-------------------------------------------- */
 @media (max-width:576px){
     .header-nav {
-       max-width: 480px!important;
+        background-color: #1a1a1a;
+        color: #fff;
+        position: fixed;
+        z-index: 99999;
+        margin: auto;
+        width: 100%;
     }
     .header-nav .logo{
         width: 20%!important;
